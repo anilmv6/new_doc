@@ -1,0 +1,165 @@
+
+classes scheduling : Request
+{
+  "context": {
+    "clientId": "1",
+    "companyId": "2",
+    "posId": "3",
+    "requestId": "4",
+    "userId": "5"
+  },
+  "data": {"onDate":"17/06/2019",
+"startTime":"5AM",
+"endTime":"6AM",
+"type":"classes scheduling",
+"namesAndMobileNumbers":
+{"Nakul": "+919916913136"}},
+  "requestDateTime": "2019-06-21T04:59:07.212Z"
+}
+
+classes rescheduling : Request
+{
+  "context": {
+    "clientId": "1",
+    "companyId": "2",
+    "posId": "3",
+    "requestId": "4",
+    "userId": "5"
+  },
+  "data": {"onDate":"17/06/2019",
+  "endDate":"10/07/2019",
+"startTime":"5AM",
+"endTime":"6AM",
+"type":"classes rescheduling",
+"namesAndMobileNumbers":
+{"Nakul": "+919916913136"}},
+  "requestDateTime": "2019-06-21T04:59:07.212Z"
+}
+
+
+classes new classes : Request
+{
+  "context": {
+    "clientId": "1",
+    "companyId": "2",
+    "posId": "3",
+    "requestId": "4",
+    "userId": "5"
+  },
+  "data": {"onDate":"17/06/2019",
+"type":"new classes",
+"namesAndMobileNumbers":
+{"Nakul": "+919916913136"}},
+  "requestDateTime": "2019-06-21T04:59:07.212Z"
+}
+
+classes coupons : Request
+{
+	"context": {
+		"clientId": "1",
+		"companyId": "2",
+		"posId": "3",
+		"requestId": "4",
+		"userId": "5"
+	},
+	"data": {
+		"couponCode": "33AVZ46",
+		"discountPercentage": "10%",
+		"type": "coupons",
+		"namesAndMobileNumbers": {
+			"Pranav": "+918971317281",
+			"Khandekar": "+919749478569",
+			"AnilK": "+919986076463"
+		}
+	},
+	"requestDateTime": "2019-06-21T04:59:07.212Z"
+}
+
+
+classes discounts : Request
+{
+  "context": {
+    "clientId": "1",
+    "companyId": "2",
+    "posId": "3",
+    "requestId": "4",
+    "userId": "5"
+  },
+  "data": {
+  "discountPercentage":"25%",
+"type":"discounts",
+"namesAndMobileNumbers":
+{"Nakul": "+919916913136"}},
+  "requestDateTime": "2019-06-21T04:59:07.212Z"
+}
+
+
+classes offers : Request
+{
+  "context": {
+    "clientId": "1",
+    "companyId": "2",
+    "posId": "3",
+    "requestId": "4",
+    "userId": "5"
+  },
+  "data": {
+  "discountPercentage":"25%",
+  "endDate":"10/07/2019",
+"type":"offers",
+"namesAndMobileNumbers":
+{"Nakul": "+919916913136"}},
+  "requestDateTime": "2019-06-21T04:59:07.212Z"
+}
+
+
+
+Hi AnilK, you have a fitness trainning class on on17/06/2019to6AM For any assistance, you can call us on 199 or log on to www.gympro.com
+
+"onDate":"17/06/2019",
+"startTime":"5AM",
+"endTime":"6AM"
+
+private Long posId;
+	private String type;
+	private String offers;
+	private String onDate;
+	private String endTime;
+	private String endDate;
+	private String coupons;
+	private String content;
+	private String startDate;
+	private String startTime;
+	private String senderId;
+	private String category;
+	private String discounts;
+	private String newClasses;
+	private List<String> nameList;
+	private String couponCode;
+	private String discountPercentage;
+	private String classesScheduling;
+	private List<String> contactNumbersList;
+	private String newClassesRescheduling;
+	private Map<String,String> namesAndMobileNumbers;
+	
+	
+	
+	
+	
+	
+	
+classes scheduling : Request
+{
+  "context": {
+    "clientId": "1",
+    "companyId": "2",
+    "posId": "3",
+    "requestId": "4",
+    "userId": "5"
+  },
+  "data": {"onDate":"17/06/2019",
+"startTime":"5AM",
+"endTime":"6AM",
+"type":"classes scheduling",
+"customerId":[586305627556511744]
+}

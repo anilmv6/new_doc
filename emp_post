@@ -1,0 +1,150 @@
+
+
+Post Method
+customerId:6500
+Content-Type:application/json
+
+https://localhost:18443/api/organization/employee/employee
+
+
+--- Manager  -- 
+{
+	"firstName": "Anilkumar",
+	"lastName": "Gowda",
+	"birthDate": "2019-11-04 11:30:40",
+	"employmentDate": "2019-11-04 11:30:40",
+	"gender": "MALE",
+	"martialStatus": "Singal",
+	"employeeEmail": "anilmv6_12@gmail.com",
+	"employeeId": "3412",
+	"reportingTo":"657467331022184448", // Manager should be available , for 1st employee creation we should send empty string 
+	"designation": "Manager",
+	"rating": "5",
+	"employmentType": "Permanent",
+	"image": "http://aws.com",
+	"employeePhones": [{
+		"phoneNumber": "+919986076463",
+		"extension": "4444",
+		"phoneType": "Permanent",
+		"preferred": true
+		
+	}],
+	"employeeAddress": [{
+		"addressType": "Permanent",
+		"line1":"layout",
+		"city":"Mysore",
+		"state":"Karnataka",
+		"postalCode": "4444",
+		"country": "India",
+		"preferred": true
+		
+	}],
+	"trainer":null
+}
+
+----------------  Receptionist ---------------------
+
+{
+	"firstName": "Anilkumar",
+	"lastName": "Gowda",
+	"birthDate": "2019-11-04 11:30:40",
+	"employmentDate": "2019-11-04 11:30:40",
+	"gender": "MALE",
+	"martialStatus": "Singal",
+	"employeeEmail": "anilmv6_14@gmail.com",
+	"employeeId": "3414",
+	"reportingTo":"657467331022184448",
+	"designation": "Receptionist",
+	"rating": "5",
+	"employmentType": "Permanent",
+	"image": "http://aws.com",
+	"employeePhones": [{
+		"phoneNumber": "+919986076463",
+		"extension": "4444",
+		"phoneType": "Permanent",
+		"preferred": true
+		
+	}],
+	"employeeAddress": [{
+		"addressType": "Permanent",
+		"line1":"layout",
+		"city":"Mysore",
+		"state":"Karnataka",
+		"postalCode": "4444",
+		"country": "India",
+		"preferred": true
+		
+	}],
+	"trainer":null
+}
+
+
+--------------  Trainer ------------------
+{
+	"firstName": "Anilkumar",
+	"lastName": "Gowda",
+	"birthDate": "2019-11-04 11:30:40",
+	"employmentDate": "2019-11-04 11:30:40",
+	"gender": "MALE",
+	"martialStatus": "Singal",
+	"employeeEmail": "anilmv6_15@gmail.com",
+	"employeeId": "3415",
+	"reportingTo":"657467331022184448",
+	"designation": "Trainer",
+	"rating": "5",
+	"employmentType": "Permanent",
+	"image": "http://aws.com",
+	"employeePhones": [{
+		"phoneNumber": "+919986076463",
+		"extension": "4444",
+		"phoneType": "Permanent",
+		"preferred": true
+		
+	}],
+	"employeeAddress": [{
+		"addressType": "Permanent",
+		"line1":"layout",
+		"city":"Mysore",
+		"state":"Karnataka",
+		"postalCode": "4444",
+		"country": "India",
+		"preferred": true
+		
+	}],
+	"trainer": {
+		"certifications": "Fit_cert,Certificat",
+		"specialization": "pro",
+		"certificatesLocation": "US"
+	}
+}
+
+
+--------------------------------------------------------------------------------------------------
+
+GET Method
+https://localhost:18443/api/organization/employee/employee?designation=Manager
+https://localhost:18443/api/organization/employee/employee?designation=Trainer
+https://localhost:18443/api/organization/employee/employee?designation=Receptionist
+
+posId: 586298580505034753
+companyId: 586298580500840448
+
+Body:
+{
+	
+	"designation": "Trainer"
+
+}
+
+
+Delete Method :
+https://localhost:18443/api/organization/employee/employee
+
+{
+"employeeIdList":[657461657022259200,657461657022259200]
+}
+
+
+
+
+ 

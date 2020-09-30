@@ -1,0 +1,62 @@
+The value for a single credit in English is 160 characters.
+For better understanding, refer this: http://help.msg91.com/article/26-character-limit-for-a-single-credit-how-is-credit-calculated 
+For pricing, visit the link: https://msg91.com/sms-pricing/ You will get all the information according to your bulk, the validity of credits will be a lifetime. Feel free to ping us back for further assistance. 
+
+This is a paid service but we provide 99 free credits for testing when you sign up.
+For pricing, visit the link: https://msg91.com/sms-pricing/
+You will get all the information according to your bulk, and the validity of credits will be lifetime.
+For help in understanding the difference between Transactional and Promotional SMS/route, refer this link: http://help.msg91.com/article/64-what-is-the-difference-between-transactional-and-promotional-smsroute
+For FAQ's refer this: help.msg91.com
+
+You can Check balance either from the API or from the Panel.
+To check balance via API use this API:https://control.msg91.com/api/balance.php?authkey=YourAuthKey&type=1 for Promotional or 4 for the Transactional route and 106 for Send OTP. 
+To check balance via panel please refer the link: http://help.msg91.com/article/7-how-can-i-check-my-balance
+
+Please visit the API page using the 'API' option on the sidebar. 
+On this page at the top left corner, you will find a 'KEY'  which you can use in your API's
+For better understanding refer this: http://help.msg91.com/article/177-where-can-i-find-my-authentication-key
+We provide open sender ID i.e. user can choose any preferred sender ID created within below points:
+Sender Id has to be of exact 6 alphabetic characters only. No number or special character. 
+Sender ID cannot be equivalent or similar to any well known/established brands.
+Sender ID cannot be equivalent or similar to any god's, Name or Surnames.
+Note: No generic sender ID will also be allowed 
+ex: SMSIND, OTPSMS...
+S for your APP you must be using an API in which there is a parameter by the name SENDER.
+Akshay profile
+You need to pass the desired value there keeping aforementioned points on mind. 
+
+https://help.msg91.com/article/177-where-can-i-find-my-authentication-key
+
+https://help.msg91.com/article/124-how-to-set-default-sender-id
+
+https://help.msg91.com/category/4-api
+
+As per your last submission you are trying to send SMS via API.
+In API there is a parameter by the name ROUTE
+There the value needs to be changed to 4
+Akshay profile
+As 1= promotional & 4=transactional
+
+https://control.msg91.com/user/index.php#api
+
+https://control.msg91.com/user/index.php#settings
+
+
+
+
+
+Important Information
+Arrivals and Check-Ins
+Goods Tracking
+Recruitment
+Short Surveys
+Customer Support
+Alerts
+Appointments/Reminders
+Product Verification/Password Confirmations
+Product Launches
+Virtual Gifts
+Discount Coupons or Vouchers
+Orders
+Marketing Campaigns
+Sales Promotions

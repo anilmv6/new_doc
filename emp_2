@@ -1,0 +1,181 @@
+
+
+Staff and Employee
+--------------------
+
+
+------- MANAGER ----------------
+
+https://localhost:18443/api/organization/employee/employee (POST)
+
+Header:
+posId: 586298580505034753
+companyId:586298580500840448
+Content-Type:application/json
+customerId:6500
+
+Body:
+{
+	"firstName": "Anilkumar",
+	"lastName": "Gowda",
+	"birthDate": "2019-11-04 11:30:40",
+	"employmentDate": "2019-11-04 11:30:40",
+	"gender": "MALE",
+	"martialStatus": "Singal",
+	"employeeEmail": "anilmv6_19@gmail.com",
+	"employeeId": "GP003",
+	"reportingTo":"",
+	"designation": "Manager",
+	"rating": "5",
+	"employmentType": "Permanent",
+	"image": "http://aws.com",
+	"employeePhones": [{
+		"phoneNumber": "+919986076463",
+		"extension": "4444",
+		"phoneType": "Permanent",
+		"preferred": true
+		
+	}],
+	"employeeAddress": [{
+		"addressType": "Permanent",
+		"addressLine1":"layout",
+		"city":"Mysore",
+		"state":"Karnataka",
+		"postalCode": "4444",
+		"country": "India",
+		"preferred": true
+		
+	}],
+	"trainer":null
+}
+
+-------  Receptionist  -----------------
+
+https://localhost:18443/api/organization/employee/employee (POST)
+
+Header:
+posId: 586298580505034753
+companyId:586298580500840448
+Content-Type:application/json
+customerId:6500
+
+Body:
+{
+	"firstName": "Anilkumar",
+	"lastName": "Gowda",
+	"birthDate": "2019-11-04 11:30:40",
+	"employmentDate": "2019-11-04 11:30:40",
+	"gender": "MALE",
+	"martialStatus": "Singal",
+	"employeeEmail": "anilmv6_20@gmail.com",
+	"employeeId": "GP004",
+	"reportingTo":"657836639925592064",
+	"designation": "Receptionist",
+	"rating": "5",
+	"employmentType": "Permanent",
+	"image": "http://aws.com",
+	"employeePhones": [{
+		"phoneNumber": "+919986076463",
+		"extension": "4444",
+		"phoneType": "Permanent",
+		"preferred": true
+		
+	}],
+	"employeeAddress": [{
+		"addressType": "Permanent",
+		"addressLine1":"layout",
+		"city":"Mysore",
+		"state":"Karnataka",
+		"postalCode": "4444",
+		"country": "India",
+		"preferred": true
+		
+	}],
+	"trainer":null
+}
+
+-------  Trainer ------------
+
+https://localhost:18443/api/organization/employee/employee (POST)
+
+Header:
+posId: 586298580505034753
+companyId:586298580500840448
+Content-Type:application/json
+customerId:6500
+
+Body:
+{
+	"firstName": "Anilkumar",
+	"lastName": "Gowda",
+	"birthDate": "2019-11-04 11:30:40",
+	"employmentDate": "2019-11-04 11:30:40",
+	"gender": "MALE",
+	"martialStatus": "Singal",
+	"employeeEmail": "anilmv6_21@gmail.com",
+	"employeeId": "GP005",
+	"reportingTo":"657836639925592064",
+	"designation": "Trainer",
+	"rating": "5",
+	"employmentType": "Permanent",
+	"image": "http://aws.com",
+	"employeePhones": [{
+		"phoneNumber": "+919986076463",
+		"extension": "4444",
+		"phoneType": "Permanent",
+		"preferred": true
+		
+	}],
+	"employeeAddress": [{
+		"addressType": "Permanent",
+		"addressLine1":"layout",
+		"city":"Mysore",
+		"state":"Karnataka",
+		"postalCode": "4444",
+		"country": "India",
+		"preferred": true
+		
+	}],
+	"trainer": {
+		"certifications": "Fit_cert,Certificat",
+		"specialization": "pro",
+		"certificatesLocation": "US"
+	}
+}
+
+----------------------------------------------------------------------------------------------------------
+
+GET Method
+https://localhost:18443/api/organization/employee/employee
+https://localhost:18443/api/organization/employee/employee
+https://localhost:18443/api/organization/employee/employee
+
+Header:
+posId: 586298580505034753
+companyId:586298580500840448
+Content-Type:application/json
+customerId:6500
+
+Body:
+{
+	"designation": "Trainer"  // "Manager" or "Receptionist" // to get list of manager or trainer etc ...
+}
+
+Note :  if all employees needed under the posId, please don't pass anything in body, you will get all employee 
+
+
+----------------------------------------------------------------------------------------------------
+
+Delete Method :
+https://localhost:18443/api/organization/employee/employee
+
+Header:
+posId: 586298580505034753
+companyId:586298580500840448
+Content-Type:application/json
+customerId:6500
+
+{
+"employeeIdList":[657461657022259200,657461657022259200]
+}
+
